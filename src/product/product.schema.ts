@@ -23,8 +23,8 @@ export class Product {
   @Prop()
   imageUrl: string; // 新增的图片属性
 
-  @Prop([String])
-  tags: string[];
+  @Prop([{ name: String, type: String }])
+  tags: Array<{ name: string, type: string }>;
 
   @Prop()
   out_of_stock: boolean;
